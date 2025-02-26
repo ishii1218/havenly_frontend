@@ -13,6 +13,9 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+# Copy .env file (if using SKIP_PREFLIGHT_CHECK)
+COPY .env ./
+
 # Build the React application
 RUN npm run build
 
