@@ -13,7 +13,10 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Stage 2: Serve the application using a lightweight Node.js server
+# Build the React application
+RUN npm run build
+
+# Stage 2: Serve the application using a lightweight HTTP server
 FROM node:18-alpine
 
 # Set the working directory
