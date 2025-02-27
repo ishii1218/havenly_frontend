@@ -23,7 +23,9 @@ const Navbar = () => {
     <div className="navbar">
       <a href="/">
         <img src="/assets/logo.png" alt="logo" />
+        <p >Havenly Homes</p>
       </a>
+      
 
       <div className="navbar_search">
         <input
